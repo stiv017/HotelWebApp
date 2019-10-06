@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "Soba";
+}
+
+
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=639, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+    <link rel="stylesheet" type="text/css" href="~/css/soba.css">
+
+</head>
+<body class="body-class">
+
+    <!--<a name="Home"> </a>-->
+
+
+    <div class="main-menu">
+        <div class="logo-image">
+            <p class="logo-text">Our Hotel</p>
+        </div>
+
+
+    </div>
+
+    <div class="banner">
+        <img class="myBanner" src="~/images/headerRoom1.jpg" alt="banner" style="width:100%" id="Home">
+
+    </div>
+    <div class="roomDescription">
+        <h1>Opis sobe</h1>
+        <div class="pasus">
+            <p class="description">
+                Nulla at mauris accumsan eros ullamcorper tincidunt at nec ipsum.
+                In iaculis est ut sapien ultrices, vel feugiat nulla lobortis. Donec nec quam accumsan, lobortis.
+            </p>
+
+            <p class="description">
+
+                Integer at erat malesuada, tincidunt orci nec, aliquet quam. Nulla accumsan sapien eu ultrices pulvinar.
+                Proin tincidunt augue a auctor placerat. Morbi in fermentum erat.
+            </p>
+        </div>
+        <div class="slika">
+            <img src="~/images/kupatilo.jpg" width="350px" height="300px">
+        </div>
+
+        <button class="buttonHeader" onclick="location.href='/Home/Rezevacija'"> Rezervisi sobu </button>
+
+    </div>
+
+    <div class="formaRezervacija">
+        <form action="">
+
+            <label for="fname">DatumOd</label>
+            <input name="calendarselect{ContactID}" class="datumOd" type="date" id="calendar">
+
+            <label for="lname">DatumDo</label>
+
+            <input name="calendarselect{ContactID}" class="datumDo" type="date" id="calendar">
+            <input type="text" id="soba" name="Soba" placeholder="Unesi Tacan Naziv Sobe">
+            <input type="submit" value="Rezervisi">
+
+        </form>
+    </div>
+</body>

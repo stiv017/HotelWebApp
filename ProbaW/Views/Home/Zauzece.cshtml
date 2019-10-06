@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ProbaW.Models.Zauzece>
+@{
+    ViewData["Title"] = "Zauzece";
+}
+
+<h2>Zauzece</h2>
+
+<table class="table">
+    <tr>
+        <th>IDGost</th>
+        <th>IDSoba</th>
+        <th>DatumOd</th>
+        <th>DatumDo</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayTextFor(modelItem => item.IdGost)
+            </td>
+            <td>
+                @Html.DisplayTextFor(modelItem => item.IdSoba)
+            </td>
+            <td>
+                @Html.DisplayTextFor(modelItem => item.DatumOd)
+            </td>
+            <td>
+                @Html.DisplayTextFor(modelItem => item.DatumDo)
+            </td>
+        </tr>
+    }
+
+    <tr>
+        <th><button class="buttonHeader" onclick="location.href='/Home/Izmena'"> Izmeni</button></th>
+        <th><button class="buttonHeader" onclick="location.href='/Home/Brisanje'"> Obrisi </button></th>
+       
+    </tr>
+
+
+</table>

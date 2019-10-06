@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Rezevacija";
+}
+    <head>
+        <link rel="stylesheet" type="text/css" href="~/css/style.css">
+        <link rel="stylesheet" type="text/css" href="~/css/soba.css">
+    </head>
+<h2>Rezevacija</h2>
+<div class="forma">
+    <form action="Rezevacija" method="post">
+
+        <label for="br">Broj Pasosa</label>
+        <input type="number" id="brPass" name="BrojPasosa" placeholder="Vas Broj Pasosa">
+
+        <label for="maticni">Maticni Broj</label>
+        <input type="number" id="maticni" name="Jmbg" placeholder="Uneste Maticni Broj">
+
+        <label for="lname">Vase Prezime</label>
+        <input type="text" id="prezime" name="Prezime" placeholder="Unesi Prezime">
+
+        <label for="fname">Vase Ime</label>
+        <input type="text" id="ime" name="Ime" placeholder="Unesi Ime">
+
+        <label for="dname">Datum Rodjenja</label>
+        <input name=" DatumRodjenja" type="text" id="datumRodjenja">
+
+        
+        <input type="text" id="soba" name="Soba" placeholder="Unesi Tacan Naziv Sobe">
+
+        <input type="submit" value="Posalji Rezervaciju">
+
+    </form>
+</div>
+

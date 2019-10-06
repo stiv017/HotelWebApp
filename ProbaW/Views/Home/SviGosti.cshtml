@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ProbaW.Models.Rezervacija>
+@{
+    ViewData["Title"] = "SviGosti";
+}
+
+<h2>SviGosti</h2>
+
+<table class="table">
+<tr>
+    <th>IDGosta</th>
+    <th>BrojPasosa</th>
+    <th>Jmbg</th>
+    <th>Prezime</th>
+    <th>Ime</th>
+    <th>Datum Rodjenja</th>
+</tr>
+@foreach (var item in Model)
+{
+<tr>
+    <td>
+        @Html.DisplayTextFor(modelItem => item.IdGost)
+    </td>
+    <td>
+        @Html.DisplayTextFor(modelItem => item.BrojPasosa)
+    </td>
+    <td>
+        @Html.DisplayTextFor(modelItem => item.Jmbg)
+    </td>
+    <td>
+        @Html.DisplayTextFor(modelItem => item.Prezime)
+    </td>
+    <td>
+        @Html.DisplayTextFor(modelItem => item.Ime)
+    </td>
+    <td>
+        @Html.DisplayTextFor(modelItem => item.DatumRodjenja)
+    </td>
+</tr>
+}
+</table>

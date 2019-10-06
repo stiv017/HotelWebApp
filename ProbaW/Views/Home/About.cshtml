@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ProbaW.Models.Soba>
+@{
+    ViewData["Title"] = "About";
+}
+
+<h2>About</h2>
+<table class="table">
+    <tr>
+        <th>IDSoba</th>
+        <th>OznakaSoba</th>
+        <th>TipSobe</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayTextFor(modelItem => item.IdSoba)
+    </td>
+    <td>
+        @Html.DisplayTextFor(modelItem => item.OznakaSoba)
+    </td>
+    <td>
+        @Html.DisplayTextFor(modelItem => item.IdTipSobe)
+    </td>
+</tr>
+    }
+</table>
+

@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/login.css">
+</head>
+<body>
+    <h2>Login</h2>
+
+    <form action="Verify" method="post">
+      
+        <div class="container">
+            <label for="uname"><b>Korisnicko Ime</b></label>
+            <input type="text" placeholder="Unesi Korisnicko Ime" name="KorisnickoIme" required>
+
+            <label for="psw"><b>Lozinka</b></label>
+            <input type="password" placeholder="Unesi Lozinku" name="Lozinka" required>
+
+            <button type="submit">Login</button>
+            
+        </div>
+
+      
+    </form>
+</body>
+</html>

@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=639, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Our Hotel </title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/responsive-menu.js"></script>
+<script src="js/slider-slick.js"></script>
+
+
+</head>
+<body class="body-class"  >
+	
+    
+
+<div class="main-menu">
+		<div class="logo-image">
+			<p class="logo-text">Our Hotel</p>
+		</div>
+		
+	<div id="repsponsive-menu-container">
+			<div id="responsive-menu" class="responsive-menu-side-navigation">
+				<nav>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#Services">Services</a></li>
+						<li><a href="#AboutUs">About Us</a></li>
+						<li><a href="#Team">Team</a></li>
+						<li><a href="#Contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+			<span id="responsive-menu-icon" class="responsive-menu-icon" onclick="OpenCloseResponsiveMenu()">&#9776;</span>
+		</div>
+		
+		<div class="menu-items">
+			<div class="menu-position">
+				<ul>
+					<li><a href="#home" class="selected-menu-item">Pocetna</a></li>
+					<li><a href="#Sobe">Sobe</a></li>
+					<li><a href="#AboutUs">O Nama</a></li>
+					
+					<li><a href="#Contact">Kontakt</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<script>
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 750) {
+        $(".main-menu").addClass("active");
+    } else {
+        
+       $(".main-menu").removeClass("active");
+    }
+});
+</script>
+	<div class="scrollable-data">
+	
+	</div>
+		<div class="banner">
+			<img class="myBanner" src="images/headerImage.jpg" alt ="banner" style="width:100%" id="Home">
+			<button class="buttonHeader" onclick="location.href='#Contact'"> Rezervisi Svoj Termin </button>
+		</div>
+		<div class="ourHotel">
+		<h1>O Hotelu</h1>
+		<P class="opisHotela">
+			Etiam scelerisque nunc eu sagittis rhoncus. Mauris eget ullamcorper tortor.
+            Phasellus nisi enim, mattis eu felis sit amet, malesuada pharetra purus.
+            Integer congue dapibus felis, at vulputate quam lobortis ac.	
+			</p>
+	</div>
+	<div class="container">
+	          
+	<section class="regular slider">
+    <div>
+      <img src="images/terasa.jpg" width="350px" height="300px">
+    </div>
+    <div>
+     <img src="images/bar.jpeg" width="350px" height="300px">
+    </div>
+    <div>
+           <img src="images/parkingService.jpg" width="350px" height="300px">
+    </div>
+    <div>
+           <img src="images/svecanaSala.jpg" width="350px" height="300px">
+    </div>
+    <div>
+           <img src="images/slika1.jpg" width="350px" height="300px">
+    </div>
+    <div>
+           <img src="images/room/apartman1.jpeg" width="350px" height="300px">
+    </div>
+  </section>
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+ <script src="js/slider-slick.js" type="text/javascript" charset="utf-8"></script>
+			 <h1>Kod nas te uvek dobrodosli</h1>
+		<div class="container-information">
+		    
+			<div class="tekst">
+			<P class="opisHotela">
+			Etiam scelerisque nunc eu sagittis rhoncus. Mauris eget ullamcorper tortor.
+            Phasellus nisi enim, mattis eu felis sit amet, malesuada pharetra purus.
+            Integer congue dapibus felis, at vulputate quam lobortis ac.	
+			</p>
+			</div>
+         <div class="5zvezda"><img src="images/hotel5.jpg" alt="znakabout1" width="40%"/></div>			
+		</div>
+			
+	</div>
+	<p class="title-text" id="Sobe"></p>
+		<div class="gallery">
+        <div class="wrapper">
+		<img src="images/room/soba1.jpg" alt="znakabout1" width="320px" height="320px" /> 
+		 <div class="overlay">
+		 <div class="content">
+		   Dvokrevetna Soba 
+		   <p2>Jedna Noc</p2>
+		     15e
+		    <a href="/Home/soba">Rezervisi Sobu</a>
+		</div>
+		</div>
+		
+		</div>
+		 <div class="wrapper">
+		<img src="images/room/soba2.jpg" alt="znakabout1"   width="320px" height="320px" /> 
+		 <div class="overlay">
+		 <div class="content">
+		   Soba Medeni Mesec 
+		   <p2>Jedna Noc</p2>
+		     15e
+		   <a href="/Home/soba">Rezervisi Sobu</a>
+		</div>
+		</div>
+		
+		</div>
+		 <div class="wrapper">
+		<img src="images/room/soba3.jpg" alt="znakabout1"  width="320px" height="320px" /> 
+		 <div class="overlay">
+		 <div class="content">
+		    Soba Grad 
+		   <p2>Jedna Noc</p2>
+		     12e
+		   <a href="/Home/soba" >Rezervisi Sobu</a>
+		   
+		</div>
+		</div>
+		</div>
+		<div class="wrapper">
+		<img src="images/room/soba4.jpg" alt="znakabout1"  width="320px" height="320px" /> 
+		 <div class="overlay">
+		 <div class="content">
+		    Poslovna Soba 
+		   <p2>Jedna Noc</p2>
+		     16e
+		   <a href="/Home/soba">Rezervisi Sobu</a>
+		</div>
+		</div>
+		</div>
+		
+		<div class="wrapper">
+		<img src="images/room/soba5.jpg" alt="znakabout1"  width="320px" height="320px" /> 
+		 <div class="overlay">
+		 <div class="content">
+		    Soba Medeni Mesec
+		   <p2>Jedna Noc</p2>
+		     15e
+		   <a href="/Home/soba">Rezervisi Sobu</a>
+		</div>
+		</div>
+		</div>
+		<div class="wrapper">
+		<img src="images/room/apartman.jpg" alt="znakabout1"  width="320px" height="320px" /> 
+		 <div class="overlay">
+		 <div class="content">
+		   Apartman 
+		   <p2>Jedna Noc</p2>
+		     35e
+		   <a href="/Home/soba">Rezervisi Apartman</a>
+		</div>
+		</div>
+		</div>
+	    </div>
+					
+				
+				
+	<div class="about-us">
+	<div>&nbsp;</div>
+			<p class="title-text" id="AboutUs">O nama</p>
+			
+		  <div class="images-text">
+		    <div class="about" >Nas bar je mesto gde se dodatno mozete odmoriti i opustiti</div>
+			<img src="images/bar.jpeg" alt="znakabout1" width="50%"/>
+			</div>
+			<div class="images-text">
+			<img src="images/parkingService.jpg" alt="znakabout1" width="100%"/>
+			<div class="about" >Nase osoblje je ljubazno i pouzdano uvek cete biti zadovoljni uslugom koja vam je pruzena</div>
+			</div>
+			<div class="images-text">
+		    <div class="about" >Svecana sala koju imamo u hotelu je velika i predviljena za sve vrste konferencije</div>
+			<img src="images/svecanaSala.jpg" alt="znakabout1" width="100%"/>
+			</div>
+			</div>
+			
+			
+			
+				<div class="contact">
+				
+				<p class="page-title-text" id="Contact">Kontaktirajte nas</p>
+				
+				
+				<div id="wrapper-contact" class="wrapper-contact">
+				
+					<div class="forma">
+				<form action="">
+
+						<label for="fname">Vase Ime</label>
+						<input type="text" id="fname" name="firstname" placeholder="Unesi ime">
+
+						<label for="mail">Vas mejl</label>
+						<input type="text" id="mail" name="mail" placeholder="Unesi Mejl">
+						<label for="subject">Vase Pitanje</label>
+						<textarea id="subject" name="subject" placeholder="Unesite Poruku koju zelite da nam posaljete" style="height:200px"></textarea>
+
+						<input type="submit" value="Posalji">
+
+					</form>
+					</div>
+					
+					 <div class="mapa">
+					
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1200.7277236631562!2d21.901506653950506!3d42.54446188134326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13551f9de98c11b7%3A0x5adfedd6444f368b!2z0JLRgNCw0ZrQtQ!5e0!3m2!1ssr!2srs!4v1568730067069!5m2!1ssr!2srs"></iframe>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div class="footer">
+
+				<div class="footer-address"><img src="images/footer/clokacija.png" class="fi" alt="lokacija"/></div>
+				<div class="footer-address"> <p> Bulevar AVNOJ,Vranje,Srb </p> </div> 
+				
+				<div class="footer-mail"><img src="images/footer/crmail.jpg" class="fi" alt="mail"/></div>
+				<div class="footer-mail"> <p> hotel@hotel.rs </p></div>  
+				<div class="footer-phone"><img src="images/footer/fontele.png" class="fi" alt="telefon"/></div>
+				<div class="footer-phone"><p> +38174589123</p> </div> 
+				
+				
+				
+				<div><img src="images/footer/f-icon.png" class="social" alt="fejsbukfooter"></div>
+				<div><img src="images/footer/instagram.jpg" class="social" alt="instagramfooter"></div>
+				<div class="login"><a href="/Home/Login">Login</a></div>
+				
+				</div>
+			</div>
+			
+</body>
+</html>

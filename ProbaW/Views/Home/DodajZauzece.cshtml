@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "DodajZauzece";
+}
+    <head>
+        <link rel="stylesheet" type="text/css" href="~/css/style.css">
+        <link rel="stylesheet" type="text/css" href="~/css/soba.css">
+    </head>
+<h2>DodajZauzece</h2>
+
+<div class="forma">
+    <forma action="DodajZauzece" method="Post">
+        <label for="id">Id Zauzeca</label>
+        <input type="number" id="idZauzece" name="Id" placeholder="">
+
+        <label for="gostidentifikacija">Id Gost</label>
+        <input type="number" id="gost" name="IdGost" placeholder="">
+
+        <label for="sobaidentifikacija">Id Sobe/BrojSobe</label>
+        <input type="text" id="soba" name="IdSoba" placeholder="">
+
+        <label for="od">Datum Od</label>
+        <input type="text" id="datumOD" name="DatumOd" placeholder="">
+        <label for="do">Datum Do</label>
+        <input type="text" id="datumDO" name="DatumDo" placeholder="">
+        <input type="submit" value="Dodaj">
+    </forma>
+</div>
